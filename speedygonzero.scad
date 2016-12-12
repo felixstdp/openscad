@@ -5,7 +5,7 @@ difference(){
 union(){
 translate([-25,-20,0])cube([50,70,4]);
 translate([-10,0,0])cube([20,110,4]);
-translate([-40,100,0])cube([80,10,4]);
+translate([-32,100,0])cube([64,10,4]);
 translate([-20,90,0])cube([40,10,4]);
 translate([-20,45,0])cylinder(d=60,h=4,$fn=120);
 translate([20,45,0])cylinder(d=60,h=4,$fn=120);
@@ -13,16 +13,15 @@ translate([-20,65,0])cube([40,20,4]);
 }
 translate([25,0,-1])cube([50,43,8]);
 translate([-75,0,-1])cube([50,43,8]);
-translate([-20,85,-1])cylinder(d=20,h=6);
-translate([20,85,-1])cylinder(d=20,h=6);
-translate([20,90,-1])cylinder(d=20,h=6);
-translate([-20,90,-1])cylinder(d=20,h=6);
+translate([-20,87.5,-1])cylinder(d=25,h=6);
+translate([20,87.5,-1])cylinder(d=25,h=6);
 translate([29,47,0])cylinder(d=3,h=10,center=true);
 translate([-29,47,0])cylinder(d=3,h=10,center=true);
 translate([-29,70,0])cylinder(d=3,h=10,center=true);
 translate([29,70,0])cylinder(d=3,h=10,center=true);
-translate([-29,105,0])cylinder(d=3,h=10,center=true);
-translate([29,105,0])cylinder(d=3,h=10,center=true);
+translate([-30,105,0])cylinder(d=3,h=10,center=true);
+translate([30,105,0])cylinder(d=3,h=10,center=true);
+translate([0,90,0])cylinder(d=3,h=10,center=true);
 }
 
 //soporte motores
