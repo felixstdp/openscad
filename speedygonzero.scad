@@ -3,8 +3,9 @@ $fn=60;
 //base chasis
 difference(){
 union(){
-translate([-25,0,0])cube([50,70,4]);
-translate([-10,0,0])cube([20,150,4]);
+translate([-25,-20,0])cube([50,70,4]);
+translate([-10,0,0])cube([20,120,4]);
+translate([-40,110,0])cube([80,10,4]);
 translate([-20,45,0])cylinder(d=60,h=4,$fn=120);
 translate([20,45,0])cylinder(d=60,h=4,$fn=120);
 translate([-20,65,0])cube([40,20,4]);
@@ -17,6 +18,8 @@ translate([29,47,0])cylinder(d=3,h=10,center=true);
 translate([-29,47,0])cylinder(d=3,h=10,center=true);
 translate([-29,70,0])cylinder(d=3,h=10,center=true);
 translate([29,70,0])cylinder(d=3,h=10,center=true);
+translate([-29,115,0])cylinder(d=3,h=10,center=true);
+translate([29,115,0])cylinder(d=3,h=10,center=true);
 }
 
 //soporte motores
