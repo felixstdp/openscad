@@ -35,7 +35,7 @@ translate([0,25,6.465])rotate([0,90,0])
 cylinder(d=2.8,h=50,center=true,$fn=30);
 translate([0,25,23.885])rotate([0,90,0])
 cylinder(d=2.8,h=50,center=true,$fn=30);
-translate([0,17,14])rotate([90,0,0])cylinder(d=16.5,h=34.5);
-translate([-8.25,-17.5,14])cube([16.5,34.5,34.5]);
+translate([0,17,12.25])rotate([90,0,0])cylinder(d=16.5,h=34.5);
+translate([-8.25,-17.5,12.25])cube([16.5,34.5,34.5]);
    
 }
