@@ -1,3 +1,5 @@
+rotate([0,-90,0])
+{
 $fn=180;
 
 difference(){
@@ -34,17 +36,18 @@ rotate([0,180,0])
 translate([-35,90,0])
 difference(){
 cylinder(r=50,h=50);
-translate([0,0,-1])cylinder(r=49,h=52);
+translate([0,0,-1])cylinder(r=49.5,h=52);
 translate([-100,0,0])cube([200,200,200],center=true);
 translate([135,0,0])cube([200,200,200],center=true);
 translate([0,100,0])cube([200,200,200],center=true);    
 }
 
 difference(){
-cube([15,2,50]);
+cube([15,1.5,50]);
 translate([-1,-1,10])cube([17,4,30]);
 translate([7.5,-1,5])rotate([-90,0,0])
     cylinder(d=3.5,h=4);
 translate([7.5,-1,45])rotate([-90,0,0])
     cylinder(d=3.5,h=4);
+}
 }
