@@ -24,6 +24,8 @@ translate([29,69.5,0])cylinder(d=3,h=10,center=true);
 translate([-30,95,0])cylinder(d=3.5,h=10,center=true);
 translate([30,95,0])cylinder(d=3.5,h=10,center=true);
 translate([0,78,0])cylinder(d=3.5,h=10,center=true);
+translate([-22.5,-31,0])cylinder(d=3.5,h=10,center=true);
+translate([22.5,-31,0])cylinder(d=3.5,h=10,center=true);
 }
 
 //soporte motores
