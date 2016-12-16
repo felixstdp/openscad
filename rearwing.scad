@@ -4,11 +4,11 @@ $fn=180;
 
 difference(){
 union(){
-translate([1,40,0])
+translate([2,41,0])
 minkowski()
 {
- cube([33,18,.5]);
- cylinder(r=1,h=.5);
+ cube([32,19,.5]);
+ cylinder(r=2,h=.5);
 }
 cube([32.5,42,1]);
 }
@@ -19,11 +19,11 @@ translate([32.5,21.5,-1])cylinder(d=35,h=3);
 translate([0,0,54])
 difference(){
 union(){
-translate([1,40,0])
+translate([2,41,0])
 minkowski()
 {
- cube([33,18,.5]);
- cylinder(r=1,h=.5);
+ cube([32,19,.5]);
+ cylinder(r=2,h=.5);
 }
 cube([32.5,42,1]);
 }
