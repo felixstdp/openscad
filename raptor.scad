@@ -19,7 +19,7 @@ translate([-43,24,-1])cylinder(d=2.8,h=15);
 translate([43,8,-1])cylinder(d=2.8,h=15);
 translate([43,24,-1])cylinder(d=2.8,h=15);
 
-translate([0,105,-1])cylinder(d=10.5,h=5);
+translate([0,102,-1])cylinder(d=10.5,h=5);
 translate([10,115,-1])cylinder(d=3.5,h=5);
 translate([-10,115,-1])cylinder(d=3.5,h=5);
 
