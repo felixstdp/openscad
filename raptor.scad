@@ -1,6 +1,12 @@
 $fn=120;
 
 difference(){
+translate([-40,110,0])cube([80,10,3]);   
+translate([-69.85/2,115,-1])cylinder(d=3,h=5);
+translate([69.85/2,115,-1])cylinder(d=3,h=5);
+}
+
+difference(){
 union(){
 translate([-50,0,0])cube([100,120,3]);
 translate([38,4,0])cube(size=[12,24,6]); 
