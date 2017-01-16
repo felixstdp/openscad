@@ -14,12 +14,17 @@ translate([-19,22,0])cube([38,37,17]);
 translate([-24,38,-1])cube([5,5,5]);
 translate([19,38,-1])cube([5,5,5]);
 
-translate([-43,8,-1])cylinder(d=2.8,h=15);
-translate([-43,24,-1])cylinder(d=2.8,h=15);
-translate([43,8,-1])cylinder(d=2.8,h=15);
-translate([43,24,-1])cylinder(d=2.8,h=15);
+translate([-43,8,-1])cylinder(d=2.8,h=8);
+translate([-43,24,-1])cylinder(d=2.8,h=8);
+translate([43,8,-1])cylinder(d=2.8,h=8);
+translate([43,24,-1])cylinder(d=2.8,h=8);
 
-translate([0,102,-1])cylinder(d=10.5,h=5);
+translate([-28,12,-1])cylinder(d=4,h=8);
+translate([-28,20,-1])cylinder(d=4,h=8);
+translate([28,12,-1])cylinder(d=4,h=8);
+translate([28,20,-1])cylinder(d=4,h=8);
+
+translate([0,95,-1])cylinder(d=10.5,h=5);
 translate([10,115,-1])cylinder(d=3.5,h=5);
 translate([-10,115,-1])cylinder(d=3.5,h=5);
 
@@ -37,7 +42,6 @@ difference(){
 translate([0,0,-2])bat16340();
 translate([-19,22,-17])cube([38,37,17]);
 }
-
 
 module bat16340()
 difference(){
