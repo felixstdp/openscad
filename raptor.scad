@@ -9,11 +9,11 @@ translate([69.85/2,115,-1])cylinder(d=3,h=5);
 difference(){
 union(){
 translate([-50,0,0])cube([100,120,3]);
-translate([38,4,0])cube(size=[12,24,6]); 
-translate([-50,4,0])cube(size=[12,24,6]);     
+translate([30,4,0])cube(size=[20,24,6]); 
+translate([-50,4,0])cube(size=[20,24,6]);     
 }
-translate([100,105,-1])cylinder(r=90,h=5);
-translate([-100,105,-1])cylinder(r=90,h=5);
+translate([105,105,-1])cylinder(r=90,h=5);
+translate([-105,105,-1])cylinder(r=90,h=5);
 translate([-19,22,0])cube([38,37,17]);
 
 translate([-45,8,-1])cylinder(d=2.8,h=15);
