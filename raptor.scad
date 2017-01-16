@@ -29,6 +29,7 @@ translate([10,115,-1])cylinder(d=3.5,h=5);
 translate([-10,115,-1])cylinder(d=3.5,h=5);
 translate([6.73,105,-1])cylinder(d=2.5,h=5);
 translate([-6.73,105,-1])cylinder(d=2.5,h=5);
+translate([0,105,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
 {
