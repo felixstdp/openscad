@@ -1,3 +1,6 @@
+// chasis para robot siguelíneas
+// 2 motores N20, 1 arduino Pro Micro, 1 driver TB6612 y 2 pilas CR123/16340
+
 $fn=30;
 
 difference(){
