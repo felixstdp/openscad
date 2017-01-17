@@ -1,7 +1,12 @@
 $fn=30;
 
 difference(){
-translate([-35,0,0])cube([70,115,3]);
+translate([-35,0,0])cube([70,108,3]);
+
+minkowski(){
+translate([-4.5,94,-1])cube([9,0.01,5]);
+cylinder(d=2,h=5);
+}
 
 translate([-19,22,-1])cube([38,37,5]);
 translate([101,105,-1])cylinder(r=90,h=5,$fn=120);
@@ -21,8 +26,8 @@ translate([-15,20,-1])cylinder(d=3,h=8);
 translate([15,12,-1])cylinder(d=3,h=8);
 translate([15,20,-1])cylinder(d=3,h=8);
 
-translate([6.73,100,-1])cylinder(d=2.5,h=5);
-translate([-6.73,100,-1])cylinder(d=2.5,h=5);
+translate([6.73,101,-1])cylinder(d=2.5,h=5);
+translate([-6.73,101,-1])cylinder(d=2.5,h=5);
 //translate([0,105,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
@@ -70,6 +75,7 @@ translate([34.9,95,0])cylinder(d=8,h=3);
 }
 translate([-34.9,95,0])cylinder(d=2.8,h=10,center=true);
 translate([34.9,95,0])cylinder(d=2.8,h=10,center=true);
-//translate([-8.89,96.2,-1])pin20mil(8,1.94,5);
-//translate([6.35,96.2-2.54,-1])pin20mil(2,1.94,5);
+translate([-8.89,96.2,-1])pin20mil(8,1.94,5);
+translate([6.35,96.2-2.54,-1])pin20mil(2,1.94,5);
+
 }
