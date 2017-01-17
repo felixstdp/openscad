@@ -4,7 +4,7 @@ difference(){
 translate([-35,0,0])cube([70,108,3]);
 
 minkowski(){
-translate([-4.5,94,-1])cube([9,0.01,5]);
+translate([-4.5,94,-1])cube([9,0.5,5]);
 cylinder(d=2,h=5);
 }
 
