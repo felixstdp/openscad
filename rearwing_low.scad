@@ -42,11 +42,5 @@ translate([135,0,0])cube([200,200,200],center=true);
 translate([0,100,0])cube([200,200,200],center=true);    
 }
 
-difference(){
 translate([0,10,0])cube([15,1,55]);
-translate([7.5,9,5])rotate([-90,0,0])
-    cylinder(d=3.5,h=4);
-translate([7.5,9,50])rotate([-90,0,0])
-    cylinder(d=3.5,h=4);
-}
 }
