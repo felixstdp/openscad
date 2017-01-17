@@ -65,6 +65,8 @@ for (i=[1:n]){
     translate([(i-1)*2.54,0,0])cylinder(d=d_paso,h=h_paso);
 }
 
+// morro para montar sensores de líneas
+
 translate([0,20,0])
 difference(){
 union(){
