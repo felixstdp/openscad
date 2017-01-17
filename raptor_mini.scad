@@ -44,7 +44,7 @@ translate([-19,22,-17])cube([38.5,38.5,17]);
 
 module bat16340()
 difference(){
-translate([-19,22,0])cube([38.5,38.5,17]);
+translate([-19,22,0])cube([38.5,38.5,14]);
 translate([9.25,23.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36);
 translate([-9.25,23.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36);
 translate([-18,23.5,8.75])cube([17.5,36,20]);
@@ -52,7 +52,7 @@ translate([0.5,23.5,8.75])cube([17.5,36,20]);
 translate([0,40.75,14])cube([100,16,8],center=true);
 }
 
-//taladros paRa pines a 10 por pulgada
+//taladros para pines a 10 por pulgada
 
 module pin20mil(n,d_paso,h_paso)
 for (i=[1:n]){
