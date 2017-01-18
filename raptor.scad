@@ -29,7 +29,7 @@ translate([30,12,-1])cylinder(d=3,h=8);
 translate([30,20,-1])cylinder(d=3,h=8);
 
 minkowski(){
-translate([-6,100,-1])cube([12,1,5]);
+translate([-5,100,-1])cube([10,1,5]);
 cylinder(d=4,h=5);
 }
 
@@ -57,8 +57,8 @@ translate([-20,19,-3])cube([40,44,3]);
 module bat16340()
 difference(){
 translate([-19.25,0,0])cube([38.5,39,14]);
-translate([9.25,1.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36);
-translate([-9.25,1.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36);
+translate([9.25,1.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36,$fn=60);
+translate([-9.25,1.5,9])rotate([-90,0,0])cylinder(d=17.5,h=36,$fn=60);
 translate([-18,1.5,8.75])cube([17.5,36,20]);
 translate([0.5,1.5,8.75])cube([17.5,36,20]);
 translate([0,19.5,14])
