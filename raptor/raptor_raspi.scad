@@ -7,6 +7,7 @@ $fn=60;
 difference(){
 union(){
 translate([-50,0,0])cube([100,115,3]);
+// uncomment to elevate motors and lower chassis    
 //translate([32,4,0])cube(size=[18,24,6]); 
 //translate([-50,4,0])cube(size=[18,24,6]);
 }
@@ -42,7 +43,8 @@ translate([-20,-1,-3])cube([40,44,3]);
 
 translate([0,115,0])frontwing();
 
-//portapilas
+// battery holder
+
 module bat16340()
 difference(){
 translate([-19.25,0,0])cube([38.5,39,14]);
@@ -57,7 +59,7 @@ rotate([0,90,0])cylinder(d=3,h=100,$fn=30);
 }    
 }
 
-//taladros raspi zero
+// raspi zero drills
 module raspifix(){
 $fn=30;    
 translate([29,-11.5,-1])cylinder(d=3,h=10);
@@ -66,7 +68,7 @@ translate([-29,11.5,-1])cylinder(d=3,h=10);
 translate([29,11.5,-1])cylinder(d=3,h=10);
 }
 
-// soporte morro
+// front wing or sensor support
 
 module frontwing(){
 difference(){
