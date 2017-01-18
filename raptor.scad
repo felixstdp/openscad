@@ -5,15 +5,15 @@ $fn=30;
 
 difference(){
 union(){
-translate([-50,0,0])cube([100,120,3]);
+translate([-50,0,0])cube([100,125,3]);
 translate([32,4,0])cube(size=[18,24,6]); 
 translate([-50,4,0])cube(size=[18,24,6]);
 }
 
 translate([-19.25,21.5,-1])cube([38.5,39,5]);
 
-translate([105,105,-1])cylinder(r=90,h=5,$fn=120);
-translate([-105,105,-1])cylinder(r=90,h=5,$fn=120);
+translate([125,120,-1])cylinder(r=112,h=5,$fn=120);
+translate([-125,120,-1])cylinder(r=112,h=5,$fn=120);
 
 translate([-24,38,-1])cube([5,5,5]);
 translate([19,38,-1])cube([5,5,5]);
@@ -29,20 +29,18 @@ translate([30,12,-1])cylinder(d=3,h=8);
 translate([30,20,-1])cylinder(d=3,h=8);
 
 minkowski(){
-translate([-6,97,-1])cube([12,1,5]);
+translate([-6,100,-1])cube([12,1,5]);
 cylinder(d=4,h=5);
 }
 
-translate([10,115,-1])cylinder(d=3.5,h=5);
-translate([-10,115,-1])cylinder(d=3.5,h=5);
-translate([6.73,105,-1])cylinder(d=2.5,h=5);
-translate([-6.73,105,-1])cylinder(d=2.5,h=5);
+translate([6.73,110,-1])cylinder(d=2.5,h=5);
+translate([-6.73,110,-1])cylinder(d=2.5,h=5);
 //translate([0,105,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
 {
-translate([64,7.62,-1])pin20mil(12,1.94,10);
-translate([64,-7.62,-1])pin20mil(12,1.94,10);
+translate([65,7.62,-1])pin20mil(12,1.94,10);
+translate([65,-7.62,-1])pin20mil(12,1.94,10);
 }
 
 translate([-8.89,18.24,-1])pin20mil(8,1.94,10);
@@ -79,13 +77,17 @@ for (i=[1:n]){
 
 // morro para montar sensores de líneas SUNFOUNDER
 
-translate([0,20,0])
+translate([0,120,0])
 difference(){
 union(){
-translate([-30,90,0])cube([60,10,3]);
-translate([-30,95,0])cylinder(d=10,h=3);
-translate([30,95,0])cylinder(d=10,h=3);
+translate([-30,-5,0])cube([60,10,3]);
+translate([-30,0,0])cylinder(d=10,h=3);
+translate([30,0,0])cylinder(d=10,h=3);
+translate([15,-7,1.5])cube([5,5,3],center=true);
+translate([-15,-7,1.5])cube([5,5,3],center=true);
 }
-translate([-30,95,0])cylinder(d=3,h=10,center=true);
-translate([30,95,0])cylinder(d=3,h=10,center=true);
+translate([-30,0,0])cylinder(d=3,h=10,center=true);
+translate([30,0,0])cylinder(d=3,h=10,center=true);
+translate([18,-10,-1])cylinder(d=10,h=5);
+translate([-18,-10,-1])cylinder(d=10,h=5);
 }
