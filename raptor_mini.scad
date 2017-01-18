@@ -1,3 +1,6 @@
+// chassis for a follow line robot
+// 2x N20 motors, Arduino pro micro, Driver TB6612, 16340/cr123 batteries, Pololu QTR8x sensor
+
 $fn=30;
 
 difference(){
