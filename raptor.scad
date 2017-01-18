@@ -12,8 +12,8 @@ translate([-50,4,0])cube(size=[18,24,6]);
 
 translate([-19.25,21.5,-1])cube([38.5,39,5]);
 
-translate([125,120,-1])cylinder(r=112,h=5,$fn=120);
-translate([-125,120,-1])cylinder(r=112,h=5,$fn=120);
+translate([125,115,-1])cylinder(r=112,h=5,$fn=120);
+translate([-125,115,-1])cylinder(r=112,h=5,$fn=120);
 
 translate([-24,38,-1])cube([5,5,5]);
 translate([19,38,-1])cube([5,5,5]);
