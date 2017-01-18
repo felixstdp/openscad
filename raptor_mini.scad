@@ -6,7 +6,7 @@ translate([-35,0,0])cube([70,113,3]);
 translate([-19.25,22,-1])cube([38.5,39,5]);
 
 minkowski(){
-translate([-5.5,97,-1])cube([11,0.5,5]);
+translate([-5.5,98,-1])cube([11,0.5,5]);
 cylinder(d=2,h=5);
 }
 
@@ -68,7 +68,7 @@ for (i=[1:n]){
     translate([(i-1)*2.54,0,0])cylinder(d=d_paso,h=h_paso);
 }
 
-// morro para montar sensores de líneas
+// morro para montar sensores de líneas QTR-8x
 
 translate([0,116,0])
 difference(){
