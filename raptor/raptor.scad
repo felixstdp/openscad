@@ -35,7 +35,7 @@ cylinder(d=4,h=5);
 
 translate([6.73,110,-1])cylinder(d=2.5,h=5);
 translate([-6.73,110,-1])cylinder(d=2.5,h=5);
-//translate([0,105,-1])cylinder(d=2.5,h=5);
+translate([0,105,-1])cylinder(d=2.5,h=5);
 
 rotate([0,0,90])
 {
