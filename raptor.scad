@@ -1,4 +1,4 @@
-// chasis para robot siguelíneas
+// follow line robots
 // 2 x N20 motors, 1 Arduino Pro Micro, 1 driver TB6612 y 2 x CR123/16340 batteries
 
 $fn=30;
