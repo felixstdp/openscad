@@ -81,8 +81,8 @@ translate([-14.5,-7,1.5])cube([5,5,3],center=true);
 }
 translate([-34.9,0,0])cylinder(d=2.8,h=10,center=true);
 translate([34.9,0,0])cylinder(d=2.8,h=10,center=true);
-translate([-8.89,1.2,-1])pin20mil(8,1.94,5);
-translate([6.35,1.2-2.54,-1])pin20mil(2,1.94,5);
+translate([-8.89,1.27,-1])pin20mil(8,1.94,5);
+translate([6.35,-1.27,-1])pin20mil(2,1.94,5);
 
 translate([17,-9.5,-1])cylinder(d=10,h=5);
 translate([-17,-9.5,-1])cylinder(d=10,h=5);
