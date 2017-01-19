@@ -19,9 +19,9 @@ translate([113,100,-1])cylinder(r=95,h=5,$fn=120);
 translate([-113,100,-1])cylinder(r=95,h=5,$fn=120);
 translate([0,70,-1])cylinder(d=10,h=5);
 
-translate([0,106,-1])cylinder(d=2.5,h=5);
-translate([6.73,106,-1])cylinder(d=2.5,h=5);
-translate([-6.73,106,-1])cylinder(d=2.5,h=5);
+translate([0,102,-1])cylinder(d=3.5,h=5);
+//translate([6.73,102,-1])cylinder(d=2.5,h=5);
+//translate([-6.73,102,-1])cylinder(d=2.5,h=5);
 
 translate([-43,7.5,-1])cylinder(d=2.8,h=8);
 translate([-43,24.5,-1])cylinder(d=2.8,h=8);
