@@ -4,6 +4,19 @@
 #define uchar unsigned char
 uchar t;
 
+
+int STBY = 15; //standby
+
+//Motor A
+int PWMA = 5; //Speed control 
+int AIN1 = 2; //Direction
+int AIN2 = 3; //Direction
+
+//Motor B
+int PWMB = 10; //Speed control
+int BIN1 = 14; //Direction
+int BIN2 = 16; //Direction
+
 uchar data[16];
 void setup()
 {
@@ -28,39 +41,31 @@ void loop()
 //motor A connected between A01 and A02
 //motor B connected between B01 and B02
 
-int STBY = 10; //standby
 
-//Motor A
-int PWMA = 3; //Speed control 
-int AIN1 = 9; //Direction
-int AIN2 = 8; //Direction
-
-//Motor B
-int PWMB = 5; //Speed control
-int BIN1 = 11; //Direction
-int BIN2 = 12; //Direction
-
-void move(int motor, int speed, int direction){
-
+void drive(int speedl, int speedr)
+{
   digitalWrite(STBY, HIGH); //disable standby
 
-  boolean inPin1 = LOW;
-  boolean inPin2 = HIGH;
-
-  if(direction == 1){
-    inPin1 = HIGH;
-    inPin2 = LOW;
-  }
-
-  if(motor == 1){
-    digitalWrite(AIN1, inPin1);
-    digitalWrite(AIN2, inPin2);
-    analogWrite(PWMA, speed);
-  }else{
-    digitalWrite(BIN1, inPin1);
-    digitalWrite(BIN2, inPin2);
-    analogWrite(PWMB, speed);
-  }
+  if (speedl>0)
+  {
+    digitalWrite(AIN1, LOW); // change high for low if wheel doesnt spin forward
+    digitalWrite(AIN2, HIGH);
+    analogWrite(PWMA, speedl);
+  } else {
+    digitalWrite(AIN1, HIGH);
+    digitalWrite(AIN2, LOW);
+    analogWrite(PWMA, -speedl);
+  }  
+  if (speedr>0)
+  {
+    digitalWrite(BIN1, LOW); // change high for low if wheel doesnt spin forward
+    digitalWrite(BIN2, HIGH);
+    analogWrite(PWMB, speedr);
+  } else {
+    digitalWrite(BIN1, HIGH);
+    digitalWrite(BIN2, LOW);
+    analogWrite(PWMB, -speedr);
+  }  
 }
 
 void stop(){
