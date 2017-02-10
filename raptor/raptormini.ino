@@ -49,7 +49,7 @@ void loop()
   d=p-p_old;
   p_old=p;
   
-  if ((p*i)<0) i=0;  // corrige el overshooting - integral windup
+  if ((p*i)<0) i=0;  // integral windup
 
   u=kp*p+ki*i+kd*d;
   drive(forward+u,forward-u,0);
