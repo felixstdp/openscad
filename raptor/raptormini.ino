@@ -62,21 +62,21 @@ void drive(int speedl, int speedr)
 
   if (speedl>0)
   {
-    digitalWrite(AIN1, LOW); // change high for low if wheel doesnt spin forward
+    digitalWrite(AIN1, LOW); // switch high for low if wheel doesnt spin forward
     digitalWrite(AIN2, HIGH);
     analogWrite(PWMA, speedl);
   } else {
-    digitalWrite(AIN1, HIGH); // change high for low if wheel doesnt spin forward
+    digitalWrite(AIN1, HIGH); // switch high for low if wheel doesnt spin forward
     digitalWrite(AIN2, LOW);
     analogWrite(PWMA, -speedl);
   }  
   if (speedr>0)
   {
-    digitalWrite(BIN1, LOW); // change high for low if wheel doesnt spin forward
+    digitalWrite(BIN1, LOW); // switch high for low if wheel doesnt spin backward
     digitalWrite(BIN2, HIGH);
     analogWrite(PWMB, speedr);
   } else {
-    digitalWrite(BIN1, HIGH);
+    digitalWrite(BIN1, HIGH); // switch high for low if wheel doesnt spin backward
     digitalWrite(BIN2, LOW);
     analogWrite(PWMB, -speedr);
   }  
