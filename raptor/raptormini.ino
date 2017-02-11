@@ -22,8 +22,8 @@ float kp=.08;
 float ki=0.03;
 float kd=0.0;
 int p,d;
-float i=0;
-float p_old=0;
+int i=0;
+int p_old=0;
 int u;
 
 void setup() {}
@@ -32,7 +32,7 @@ void loop()
 {
   qtra.read(IR); // read raw sensor values
 
-  /* uncomment to read sensors via serial monitor
+  /* uncomment to show sensors via serial monitor
 
   for (int i=0 ; i<8; i++)
   {
@@ -52,13 +52,18 @@ void loop()
   if ((p*i)<0) i=0;  // integral windup
 
   u=kp*p+ki*i+kd*d;
-  drive(forward+u,forward-u,0);
+  drive(forward+u,forward-u);
  
-}
+}r
 
 void drive(int speedl, int speedr)
 {
   digitalWrite(STBY, HIGH); //disable standby
+  
+  if (speedl>255) speedl=255;
+  if (speedl<-255) speedl=-255;
+  if (speedr>255) speedr=255;
+  if (speedr<-255) speedr=-255;
 
   if (speedl>0)
   {
