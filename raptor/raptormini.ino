@@ -32,7 +32,7 @@ void loop()
 {
   qtra.read(IR); // read raw sensor values
 
-  /* uncomment to show sensors via serial monitor
+  /* uncomment to show sensor values via serial monitor
 
   for (int i=0 ; i<8; i++)
   {
@@ -54,7 +54,7 @@ void loop()
   u=kp*p+ki*i+kd*d;
   drive(forward+u,forward-u);
  
-}r
+}
 
 void drive(int speedl, int speedr)
 {
@@ -67,21 +67,21 @@ void drive(int speedl, int speedr)
 
   if (speedl>0)
   {
-    digitalWrite(AIN1, LOW); // switch high for low if wheel doesnt spin forward
+    digitalWrite(AIN1, LOW); // switch high for low if left wheel doesnt spin forward
     digitalWrite(AIN2, HIGH);
     analogWrite(PWMA, speedl);
   } else {
-    digitalWrite(AIN1, HIGH); // switch high for low if wheel doesnt spin forward
+    digitalWrite(AIN1, HIGH); // switch high for low if left wheel doesnt spin backward
     digitalWrite(AIN2, LOW);
     analogWrite(PWMA, -speedl);
   }  
   if (speedr>0)
   {
-    digitalWrite(BIN1, LOW); // switch high for low if wheel doesnt spin backward
+    digitalWrite(BIN1, LOW); // switch high for low if right wheel doesnt spin forward
     digitalWrite(BIN2, HIGH);
     analogWrite(PWMB, speedr);
   } else {
-    digitalWrite(BIN1, HIGH); // switch high for low if wheel doesnt spin backward
+    digitalWrite(BIN1, HIGH); // switch high for low if right wheel doesnt spin backward
     digitalWrite(BIN2, LOW);
     analogWrite(PWMB, -speedr);
   }  
