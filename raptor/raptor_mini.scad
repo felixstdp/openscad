@@ -5,11 +5,6 @@ translate([-35,0,0])cube([70,113,3]);
 
 translate([-19.25,22,-1])cube([38.5,39,5]);
 
-minkowski(){
-translate([-5.5,98,-1])cube([11,0.5,5]);
-cylinder(d=2,h=5);
-}
-
 translate([135,112,-1])cylinder(r=123,h=5,$fn=120);
 translate([-135,112,-1])cylinder(r=123,h=5,$fn=120);
 
@@ -81,8 +76,8 @@ translate([-14.5,-7,1.5])cube([5,5,3],center=true);
 }
 translate([-34.9,0,0])cylinder(d=2.8,h=10,center=true);
 translate([34.9,0,0])cylinder(d=2.8,h=10,center=true);
-translate([-8.89,1.27,-1])pin20mil(8,1.94,5);
-translate([6.35,-1.27,-1])pin20mil(2,1.94,5);
+//translate([-8.89,1.27,-1])pin20mil(8,1.94,5);
+//translate([6.35,-1.27,-1])pin20mil(2,1.94,5);
 
 translate([17,-9.5,-1])cylinder(d=10,h=5);
 translate([-17,-9.5,-1])cylinder(d=10,h=5);
