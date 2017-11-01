@@ -2,9 +2,9 @@ fudge = 0.1;
    
 difference(){
 
-forma2(3);
+forma2(2);
 
-translate([0,1.5,2])
+translate([0,1.5,1])
 scale([1,.95,1])
 forma1(2);
 
