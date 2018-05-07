@@ -2,8 +2,8 @@ $fn=90;
 difference(){
 
 minkowski(){
-    cube([48,16,10],center=true);
-    cylinder(d=16,h=10,center=true);
+    cube([40,8,10],center=true);
+    cylinder(d=24,h=10,center=true);
 }
 
 translate([0,80,0])cylinder(d=160,h=22,center=true);
