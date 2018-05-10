@@ -8,8 +8,8 @@ minkowski(){
 
 translate([0,80,0])cylinder(d=160,h=22,center=true);
 
-translate([26,0,8])cylinder(d=8,h=22,center=true);
-translate([-26,0,8])cylinder(d=8,h=22,center=true);
+translate([26,0,8])cylinder(d=7.5,h=22,center=true);
+translate([-26,0,8])cylinder(d=7.5,h=22,center=true);
 translate([26,0,0])cylinder(d=3,h=22,center=true);
 translate([-26,0,0])cylinder(d=3,h=22,center=true);
 translate([24.9,4,8])cylinder(d=4.5,h=22,center=true);
