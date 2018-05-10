@@ -8,10 +8,12 @@ minkowski(){
 
 translate([0,80,0])cylinder(d=160,h=22,center=true);
 
-translate([26,2,8])cylinder(d=6,h=22,center=true);
-translate([-26,2,8])cylinder(d=6,h=22,center=true);
-translate([26,2,0])cylinder(d=2,h=22,center=true);
-translate([-26,2,0])cylinder(d=2,h=22,center=true);
+translate([26,0,8])cylinder(d=8,h=22,center=true);
+translate([-26,0,8])cylinder(d=8,h=22,center=true);
+translate([26,0,0])cylinder(d=3,h=22,center=true);
+translate([-26,0,0])cylinder(d=3,h=22,center=true);
+translate([25,4,8])cylinder(d=4,h=22,center=true);
+translate([-25,4,8])cylinder(d=4,h=22,center=true);
 
 translate([0,-16,0])
 linear_extrude (height=26,center=true)
