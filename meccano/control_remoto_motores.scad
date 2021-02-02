@@ -19,3 +19,17 @@ translate([-1,9.5,6.5])cube([5,10.5,20]);
 translate([-1,23+9.5,6.5])cube([5,10.5,20]);
 translate([70,22,6.5])cube([5,10.5,20]);
 }
+
+scale([1,1,0.5])translate([-8,26.5,0])meccano(8);
+
+module meccano(n=2){
+difference(){
+    minkowski(){
+        cylinder(d=12.7,h=3,$fn=30);
+        cube([(n-1)*12.7,.001,0.001]);
+    }
+    for (i=[0:n-1]){
+        translate([i*12.7,0,-1])cylinder(d=4.5,h=5,$fn=18);
+    }
+}
+}
