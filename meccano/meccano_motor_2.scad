@@ -7,8 +7,8 @@ union(){
 }
 translate([2.5,32,-1])cylinder(d=3.5,h=5);
 translate([19.9,32,-1])cylinder(d=3.5,h=5);
-translate([11.2,10,-1])cylinder(d=8,h=5);    
-translate([11.2,22,-1])cylinder(d=5.5,h=5);
+translate([11.2,23,-1])cylinder(d=5.5,h=5);
+translate([11.2,12,-1])cylinder(d=8,h=5);    
 translate([11.2,-1.5,-1])cylinder(d=3.5,h=5);
 }
 
