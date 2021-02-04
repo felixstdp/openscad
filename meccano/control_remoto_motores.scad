@@ -1,22 +1,22 @@
 difference(){
 union(){
 difference(){
-    cube([75,53,14.5]);
-    translate([1.5,1.5,1.5])cube([72,50,20]);
+    cube([75,53.5,20]);
+    translate([1.5,1.5,1.5])cube([72,50.5,20]);
 }
 
 translate([0,0,0])cube([8,8,5]);
 translate([67,0,0])cube([8,8,5]);
-translate([0,45,0])cube([8,8,5]);
-translate([67,45,0])cube([8,8,5]);
+translate([0,45.5,0])cube([8,8,5]);
+translate([67,45.5,0])cube([8,8,5]);
 }
 translate([4,4,1])cylinder(d=2,h=5,$fn=12);
 translate([71,4,1])cylinder(d=2,h=5,$fn=12);
 translate([4,49,1])cylinder(d=2,h=5,$fn=12);
 translate([71,49,1])cylinder(d=2,h=5,$fn=12);
 
-translate([-1,10,6.5])cube([5,11.5,20]);
-translate([-1,31.5,6.5])cube([5,11.5,20]);
+translate([-1,10.5,6.5])cube([5,11.5,20]);
+translate([-1,32,6.5])cube([5,11.5,20]);
 translate([72,22.5,6.5])cube([5,11.5,20]);
 }
 
