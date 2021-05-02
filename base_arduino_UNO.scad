@@ -1,0 +1,18 @@
+$fn=20;
+difference(){
+union(){
+minkowski(){
+    cube([69,53.3,3]);
+    cylinder(d=5,h=0.01);
+}
+translate([13.97,2.5,0])cylinder(d=8,h=10);
+translate([15.24,50.7,0])cylinder(d=8,h=10);
+translate([66.04,7.6,0])cylinder(d=8,h=10);
+translate([66.04,35.5,0])cylinder(d=8,h=10);
+}
+translate([13.97,2.5,0])cylinder(d=2.9,h=10);
+translate([15.24,50.7,0])cylinder(d=2.9,h=10);
+translate([66.04,7.6,0])cylinder(d=2.9,h=10);
+translate([66.04,35.5,0])cylinder(d=2.9,h=10);
+translate([6,7,-1])cube([55,39.3,5]);
+}
