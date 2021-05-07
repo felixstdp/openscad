@@ -3,15 +3,15 @@ difference(){
 translate([0,0,-4.5])cylinder(d=26.4+5.83,h=10,$fn=60);
 translate([0,0,-5])cylinder(d=28,h=11,$fn=60);
 }
-for (i=[0:30:330]){
+for (i=[0:25.714:350]){
 rotate([0,0,i]){
 translate([15.5+2.92,0,1])cylinder(d=4,h=3.3,$fn=30);
 translate([12+2.92,-2,1])cube([3.5,4,3.3]);
 }
 }
 scale([1,1,-1])
-for (i=[0:30:330]){
-rotate([0,0,i+15]){
+for (i=[0:25.714:350]){
+rotate([0,0,i+12.86]){
 translate([15.5+2.92,0,0])cylinder(d=4,h=3.3,$fn=30);
 translate([12+2.92,-2,0])cube([3.5,4,3.3]);
 }
