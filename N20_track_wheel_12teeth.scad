@@ -19,6 +19,7 @@ translate([12,-2,0])cube([3.5,4,3.3]);
 
 difference(){
 cylinder(d=10,h=10,$fn=30);
+scale(1.05) // ajustar en funcion de la impresora
 intersection(){
 cylinder(d=3,h=11,$fn=30);
 translate([-1.5,-1,0])cube([3,3,11]);    
