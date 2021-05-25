@@ -13,19 +13,19 @@ translate([0,29.9,0])cylinder(d=64.8,h=2.5);
 translate([0,29.9,0])cylinder(d=64.8,h=10);
 }
 
-translate([12.5,12.75,0])cube([20,35,4]);
-translate([-32.5,12.75,0])cube([20,35,4]);
-translate([21.5,0,0])cube([20,60,4]);
-translate([-41.5,0,0])cube([20,60,4]);
+translate([12.5,12.75,-1])cube([20,35,4]);
+translate([-32.5,12.75,-1])cube([20,35,4]);
+translate([21.5,0,-1])cube([20,60,4]);
+translate([-41.5,0,-1])cube([20,60,4]);
 
-translate([0,7.5,0])cylinder(d=3.2,h=15);
-translate([0,7.5,0])cylinder(d1=6,d2=3,h=3);
-translate([0,24,0])cylinder(d=3,h=15);
-translate([0,24,0])cylinder(d1=6,d2=3.2,h=3);
-translate([14.75,5,0])cylinder(d=2.7,h=15);
-translate([-14.75,5,0])cylinder(d=2.7,h=15);
+translate([0,7.5,0])cylinder(d=2.8,h=15);
+//translate([0,7.5,0])cylinder(d1=6,d2=3,h=3);
+translate([0,26,0])cylinder(d=2.8,h=15);
+//translate([0,24,0])cylinder(d1=6,d2=3.2,h=3);
+translate([14.75,5,0])cylinder(d=2.33,h=15);
+translate([-14.75,5,0])cylinder(d=2.33,h=15);
 
-translate([0,40,0])cylinder(d=8,h=15);
+translate([0,40,-1])cylinder(d=8,h=15);
 }
 
 translate([7.5,0,2.5])
