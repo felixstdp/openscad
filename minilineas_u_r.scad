@@ -26,6 +26,8 @@ translate([14.75,5,0])cylinder(d=2.33,h=15);
 translate([-14.75,5,0])cylinder(d=2.33,h=15);
 
 translate([0,40,-1])cylinder(d=8,h=15);
+
+cylinder(d=2.5,h=10);
 }
 
 translate([7.5,0,2.5])
