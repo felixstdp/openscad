@@ -23,6 +23,7 @@ translate([14.75,5,0])cylinder(d=2.33,h=15);
 translate([-14.75,5,0])cylinder(d=2.33,h=15);
 
 translate([0,44,-1])cylinder(d=8,h=15);
+translate([0,0,-1])cylinder(d=2.5,h=15);
 }
 
 translate([7.5,0,2.5])
