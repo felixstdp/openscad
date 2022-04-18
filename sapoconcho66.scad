@@ -32,14 +32,12 @@ translate([30,0,-1])cube([20,60,4]);
 translate([-50,0,-1])cube([20,60,4]);
 translate([-5,-1,2.5])cube([10,37,8]);
 
-//translate([0,6,0])cylinder(d=2.5,h=15);
-//translate([0,30.5,0])cylinder(d=2.5,h=15);
-translate([22,9,0])cylinder(d=2.5,h=15);
-translate([-22,9,0])cylinder(d=2.5,h=15);
-translate([7.5,5,0])cylinder(d=2.5,h=15);
-translate([-7.5,5,0])cylinder(d=2.5,h=15);
-translate([7.5,30,0])cylinder(d=2.5,h=15);
-translate([-7.5,30,0])cylinder(d=2.5,h=15);
+translate([22,9,-1])cylinder(d=2.3,h=15);
+translate([-22,9,-1])cylinder(d=2.3,h=15);
+translate([7.5,5,-1])cylinder(d=2.3,h=15);
+translate([-7.5,5,-1])cylinder(d=2.3,h=15);
+translate([7.5,30,-1])cylinder(d=2.3,h=15);
+translate([-7.5,30,-1])cylinder(d=2.3,h=15);
 
 translate([0,44,-1])cylinder(d=12,h=15);
 }
