@@ -44,5 +44,5 @@ translate([-7.5,5,-1])cylinder(d=2.7,h=15);
 translate([7.5,30,-1])cylinder(d=2.7,h=15);
 translate([-7.5,30,-1])cylinder(d=2.7,h=15);
 
-translate([0,44,-1])cylinder(d=12,h=15);
+translate([0,39,-1])cylinder(d=12,h=15);
 }
