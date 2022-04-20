@@ -1,5 +1,4 @@
 $fn=120;
-d_eje=3.0;
 difference(){
 union(){
 cylinder(h=8.65,d=8);
@@ -7,12 +6,13 @@ cylinder(h=1.5,d=27.2);
 translate([0,0,1.5])cylinder(h=3.5,d=30.9);
 translate([0,0,5])cylinder(h=1.5,d=27.2);
 }
+scale(1.05)
 intersection(){
-translate([0,0,-1])cylinder(h=10,d=d_eje);
+translate([0,0,-1])cylinder(h=10,d=3);
 translate([4,0,4])cube(10,center=true);
 }
-translate([8,0,-1])scale([1,1.2,1])cylinder(d=8,h=10);
-translate([0,8,-1])scale([1.2,1,1])cylinder(d=8,h=10);
-translate([-8,0,-1])scale([1,1.2,1])cylinder(d=8,h=10);
-translate([0,-8,-1])scale([1.2,1,1])cylinder(d=8,h=10);
+translate([8,0,-1])scale([1,1.4,1])cylinder(d=8,h=10);
+translate([0,8,-1])scale([1.4,1,1])cylinder(d=8,h=10);
+translate([-8,0,-1])scale([1,1.4,1])cylinder(d=8,h=10);
+translate([0,-8,-1])scale([1.4,1,1])cylinder(d=8,h=10);
 }
