@@ -49,8 +49,8 @@ translate([0,20,-1])cylinder(d=7,h=15);
 translate([0,15,-1])cylinder(d=7,h=15);
 }
 
-translate([-16.51,55,-1])pin20mil(14,1,10);
-translate([-16.51,55-15.24,-1])pin20mil(14,1,10);
+translate([-16.51,55,-1])pin20mil(14,1.4,10);
+translate([-16.51,55-15.24,-1])pin20mil(14,1.4,10);
 }
 
 module pin20mil(n,d_paso,h_paso)
