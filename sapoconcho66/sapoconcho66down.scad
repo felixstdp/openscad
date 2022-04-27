@@ -27,6 +27,9 @@ translate([-5,0,0])cube([10,15,6]);
 translate([0,0,6])rotate([-90,0,0])
 cylinder(d=12,h=31,center=true);
 }
+
+translate([18,51,-1])cylinder(d=5,h=4.5);
+translate([-18,51,-1])cylinder(d=5,h=4.5);   
 }
 translate([0,29.9,0])cylinder(d=66,h=10);
 }
@@ -46,6 +49,9 @@ translate([-7.5,30,-1])cylinder(d=2.7,h=15);
 
 translate([10,48,-1])cylinder(d=2.8,h=15);
 translate([-10,48,-1])cylinder(d=2.8,h=15);
+
+translate([18,51,-1])cylinder(d=2.3,h=15);
+translate([-18,51,-1])cylinder(d=2.3,h=15);
 
 translate([0,39,-1])cylinder(d=12,h=15);
 }
