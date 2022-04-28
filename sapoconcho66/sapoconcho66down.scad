@@ -28,8 +28,8 @@ translate([0,0,6])rotate([-90,0,0])
 cylinder(d=12,h=31,center=true);
 }
 
-translate([18,51,-1])cylinder(d=5,h=4.5);
-translate([-18,51,-1])cylinder(d=5,h=4.5);   
+translate([10,48,-1])cylinder(d=7,h=5);
+translate([-10,48,-1])cylinder(d=7,h=5);   
 }
 translate([0,29.9,0])cylinder(d=66,h=10);
 }
