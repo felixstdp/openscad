@@ -33,8 +33,8 @@ cylinder(d=5,h=0.000001,$fn=15);
 }
 translate([-16,9,3])cube([32,61,30]);
 
-translate([-10,70,0])cylinder(d=2.8,h=11,$fn=12);
-translate([10,70,0])cylinder(d=2.8,h=11,$fn=12);
+translate([-10,72,0])cylinder(d=2.8,h=11,$fn=12);
+translate([10,72,0])cylinder(d=2.8,h=11,$fn=12);
 
 translate([-16,3,22])cylinder(d=2.8,h=11,$fn=12);
 translate([16,73,22])cylinder(d=2.8,h=11,$fn=12);
