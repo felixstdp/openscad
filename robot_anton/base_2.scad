@@ -7,8 +7,8 @@ minkowski(){
 translate([-39,0,0])cube([78,74,32]);
 cylinder(d=6,h=0.00001,$fn=15);
 }
-translate([-41,4,10])cube([19,67,30]);
-mirror([-1,0,0])translate([-41,4,10])cube([19,67,30]);
+translate([-43,4,10])cube([21,67,30]);
+mirror([-1,0,0])translate([-43,4,10])cube([21,67,30]);
 translate([-16,10,5])cube([32,60,30]);
 translate([0,30.1,2.45+10])rotate([0,90,0])
 cylinder(d=2.8,h=100,center=true,$fn=12);
