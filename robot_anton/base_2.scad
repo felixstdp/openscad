@@ -20,6 +20,7 @@ minkowski(){
 difference(){
 translate([0,90,0])cylinder(d=115,h=5,$fn=12);
 translate([0,110,0])cylinder(d=95,h=5,$fn=12);
+translate([-60,0,0])cube([120,65,10]);
 }
 cylinder(d=5,h=0.000001,$fn=15);
 }
