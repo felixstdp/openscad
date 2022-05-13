@@ -27,6 +27,7 @@ cylinder(d=5,h=0.000001,$fn=15);
 
 }
 
-translate([0,70,3])sphere(d=10.2,$fn=30);
-
+translate([0,70,3])sphere(d=10.8,$fn=60);
+translate([0,70,3])rotate([180,0,0])cylinder(d=9.8,h=25,$fn=60);
+translate([0,70,0])cube(size=[3,15,16],center=true);
 }
