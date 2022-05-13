@@ -18,8 +18,8 @@ cylinder(d=2.8,h=100,center=true,$fn=12);
 
 minkowski(){
 difference(){
-translate([0,90,0])cylinder(d=115,h=5,$fn=12);
-translate([0,110,0])cylinder(d=95,h=5,$fn=12);
+translate([0,90,0])cylinder(d=115,h=6,$fn=12);
+translate([0,110,0])cylinder(d=95,h=6,$fn=12);
 translate([-60,0,0])cube([120,65,10]);
 }
 cylinder(d=5,h=0.000001,$fn=15);
@@ -30,8 +30,8 @@ cylinder(d=5,h=0.000001,$fn=15);
 translate([0,70,3])sphere(d=10.8,$fn=60);
 translate([0,70,3])rotate([180,0,0])cylinder(d=9.8,h=25,$fn=60);
 translate([0,70,0])cube(size=[3,15,16],center=true);
-translate([-16,3,22])cylinder(d=2.8,h=10,$fn=12);
-translate([16,73,22])cylinder(d=2.8,h=10,$fn=12);
-translate([16,3,22])cylinder(d=2.8,h=10,$fn=12);
-translate([-16,73,22])cylinder(d=2.8,h=10,$fn=12);
+translate([-16,3,22])cylinder(d=2.8,h=11,$fn=12);
+translate([16,73,22])cylinder(d=2.8,h=11,$fn=12);
+translate([16,3,22])cylinder(d=2.8,h=11,$fn=12);
+translate([-16,73,22])cylinder(d=2.8,h=11,$fn=12);
 }
