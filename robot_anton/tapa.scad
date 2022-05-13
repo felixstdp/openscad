@@ -1,0 +1,13 @@
+difference(){
+minkowski(){
+translate([-34.5,3,3])cube([69,69,40]);
+sphere(d=6,$fn=24);
+}
+translate([-40,0,40])cube([80,80,10]);
+translate([-33.5,4,5])cube([67,67,40]);
+translate([-40,19.75,19.75])cube([80,19.5,22.5]);    
+translate([32,6,-1])cylinder(d=2.8,h=31,$fn=12);    
+translate([-32,6,-1])cylinder(d=2.8,h=31,$fn=12); 
+translate([32,60,-1])cylinder(d=2.8,h=31,$fn=12);    
+translate([-32,60,-1])cylinder(d=2.8,h=31,$fn=12); 
+}
