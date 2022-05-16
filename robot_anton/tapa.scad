@@ -8,7 +8,7 @@ sphere(d=6,$fn=15);
 }
 }
 translate([-47,-4,15])cube([94,90,40]);
-translate([-41,0,2])cube([82,74,32]);
+translate([-41,0,1])cube([82,74,32]);
 }
 translate([-16,3,0])cylinder(d=9,h=15,$fn=12);
 translate([16,72,0])cylinder(d=9,h=15,$fn=12);
