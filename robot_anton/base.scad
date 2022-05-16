@@ -8,14 +8,14 @@ translate([-41,0,0])cube([82,74,32]);
 cylinder(d=6,h=0.00001,$fn=15);
 }
 translate([-45,4,6])cube([21,67,30]);
-translate([-42,40,6])cube([21,31,30]);
+translate([-42,43,6])cube([21,28,30]);
 mirror([-1,0,0]){
 translate([-45,4,6])cube([21,67,30]);
-translate([-42,40,6])cube([21,31,30]);
+translate([-42,43,6])cube([21,28,30]);
 }
 translate([0,36.1,2.45+6])rotate([0,90,0])
 cylinder(d=2.8,h=100,center=true,$fn=12);
-translate([0,36.1,19+6])rotate([0,90,0])
+translate([0,36.1,19.9+6])rotate([0,90,0])
 cylinder(d=2.8,h=100,center=true,$fn=12);
 translate([0,17,10.7+6])rotate([0,90,0])
 cylinder(d=8,h=100,center=true,$fn=12);   
