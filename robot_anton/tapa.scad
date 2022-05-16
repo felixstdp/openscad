@@ -4,7 +4,7 @@ difference(){
 union(){
 minkowski(){
 translate([-41,0,0])cube([82,74,32]);
-sphere(d=6,$fn=15);
+sphere(d=6,$fn=30);
 }
 }
 translate([-47,-4,15])cube([94,90,40]);
@@ -19,10 +19,10 @@ translate([-16,3,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([16,72,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([16,3,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([-16,72,-4])cylinder(d=2.8,h=50,$fn=12);
-translate([-16,3,-3])cylinder(d=5.7,h=5,$fn=12);
-translate([16,72,-3])cylinder(d=5.7,h=5,$fn=12);
-translate([16,3,-3])cylinder(d=5.7,h=5,$fn=12);
-translate([-16,72,-3])cylinder(d=5.7,h=5,$fn=12);
+translate([-16,3,-3])cylinder(d=5.7,h=5,$fn=30);
+translate([16,72,-3])cylinder(d=5.7,h=5,$fn=30);
+translate([16,3,-3])cylinder(d=5.7,h=5,$fn=30);
+translate([-16,72,-3])cylinder(d=5.7,h=5,$fn=30);
 
 translate([-5,45,-3])cube([10,5,10]);
 translate([12,52,-2.55])cylinder(d=7,h=10,$fn=30);
