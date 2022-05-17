@@ -7,25 +7,25 @@ translate([-41,0,0])cube([82,74,32]);
 sphere(d=6,$fn=30);
 }
 }
-translate([-47,-4,15])cube([94,90,40]);
+translate([-47,-4,21])cube([94,90,40]);
 translate([-41,0,1])cube([82,74,32]);
 }
-translate([-16,3,0])cylinder(d=9,h=15,$fn=12);
-translate([16,72,0])cylinder(d=9,h=15,$fn=12);
-translate([16,3,0])cylinder(d=9,h=15,$fn=12);
-translate([-16,72,0])cylinder(d=9,h=15,$fn=12);
+translate([-16,3,0])cylinder(d=9,h=21,$fn=12);
+translate([16,72,0])cylinder(d=9,h=21,$fn=12);
+translate([16,3,0])cylinder(d=9,h=21,$fn=12);
+translate([-16,72,0])cylinder(d=9,h=21,$fn=12);
 }
 translate([-16,3,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([16,72,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([16,3,-4])cylinder(d=2.8,h=50,$fn=12);
 translate([-16,72,-4])cylinder(d=2.8,h=50,$fn=12);
-translate([-16,3,-3])cylinder(d=5.7,h=5,$fn=30);
-translate([16,72,-3])cylinder(d=5.7,h=5,$fn=30);
-translate([16,3,-3])cylinder(d=5.7,h=5,$fn=30);
-translate([-16,72,-3])cylinder(d=5.7,h=5,$fn=30);
+translate([-16,3,-3])cylinder(d=5.7,h=10,$fn=30);
+translate([16,72,-3])cylinder(d=5.7,h=10,$fn=30);
+translate([16,3,-3])cylinder(d=5.7,h=10,$fn=30);
+translate([-16,72,-3])cylinder(d=5.7,h=10,$fn=30);
 
-translate([-5,45,-3])cube([10,5,10]);
-translate([12,52,-2.55])cylinder(d=7,h=10,$fn=30);
+translate([-5,47.5,-3])cube([10,5,10]);
+translate([12,54.5,-2.55])cylinder(d=7,h=10,$fn=30);
 
 translate([32,20,-3.5])linear_extrude(1)
 mirror([1,0,0])text("Antón",size=18);
