@@ -1,6 +1,6 @@
 $fn=30;
 
-soporte(40,20,8,2.5,10);
+soporte(78,38,8,2.5,10);
 
 module soporte(lenght, width, ext_dia, int_dia, height)
 {
