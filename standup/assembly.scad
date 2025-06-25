@@ -32,9 +32,11 @@ translate([15.24,50.7,0])cylinder(d=2.9,h=12);
 translate([14.24,46.2,9])cube(6);
 translate([66.04,7.6,0])cylinder(d=2.9,h=12);
 translate([66.04,35.5,0])cylinder(d=2.9,h=12);
+translate([0,0,0])cylinder(d=2.9,h=12);
 }
 translate([6,15,-1])cylinder(d=3.2,h=5);    
 translate([-6,15,-1])cylinder(d=3.2,h=5);
+translate([0,-35,0])cylinder(d=3.2,h=12);
 }
 }
 
@@ -45,6 +47,7 @@ translate([0,0,1.5])cube([65,80,3],center=true);
 }
 translate([6,15,-1])cylinder(d=3.2,h=5);    
 translate([-6,15,-1])cylinder(d=3.2,h=5);
+translate([0,-35,0])cylinder(d=3.2,h=12);
 
 
 }
