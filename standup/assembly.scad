@@ -42,14 +42,10 @@ translate([0,-35,0])cylinder(d=3.2,h=12);
 
 module back_plate(){
 difference(){
-union(){
 translate([0,0,1.5])cube([65,80,3],center=true);
-}
 translate([6,15,-1])cylinder(d=3.2,h=5);    
 translate([-6,15,-1])cylinder(d=3.2,h=5);
 translate([0,-35,0])cylinder(d=3.2,h=12);
-
-
 }
 translate([-10,31,0])
 difference(){
@@ -58,7 +54,7 @@ translate([10,7,10])rotate([90,0,0])cylinder(d=2.8,h=10);
 }
 translate([0,15,19])
 difference(){
-cube([65,32,32],center=true);
+cube([65,20,32],center=true);
 cube([59,33,33],center=true);
 }
 }
