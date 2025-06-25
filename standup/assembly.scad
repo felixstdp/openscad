@@ -6,14 +6,12 @@ rotate([-90,0,0])arduino_plate();
 translate([0,0,-27])rotate([90,0,0])
 motor_support();
 
+translate([0,-22.3,0])rotate([-90,0,180])back_plate();
+
 translate([11.5,0,-38.1])rotate([90,0,0])
 motorandwheel();
 scale([-1,1,1])translate([11.5,0,-38.1])rotate([90,0,0])
 motorandwheel();
-
-translate([0,-22.3,0])rotate([-90,0,180])back_plate();
-
-
 
 module arduino_plate(){
 difference(){
