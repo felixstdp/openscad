@@ -3,7 +3,7 @@ $fn=60;
 //assembly
 rotate([-90,0,0])arduino_plate();
 
-translate([0,0,-27])rotate([90,0,0])
+translate([0,0,9])rotate([-90,0,180])
 motor_support();
 
 translate([0,-22.3,0])rotate([-90,0,180])back_plate();
@@ -12,6 +12,8 @@ translate([11.5,0,-38.1])rotate([90,0,0])
 motorandwheel();
 scale([-1,1,1])translate([11.5,0,-38.1])rotate([90,0,0])
 motorandwheel();
+
+translate([0,-3,55])rotate([-90,0,180])us_support();
 
 module arduino_plate(){
 difference(){
@@ -32,8 +34,8 @@ translate([66.04,7.6,0])cylinder(d=2.9,h=12);
 translate([66.04,35.5,0])cylinder(d=2.9,h=12);
 translate([0,0,0])cylinder(d=2.9,h=12);
 }
-translate([6,15,-1])cylinder(d=3.2,h=5);    
-translate([-6,15,-1])cylinder(d=3.2,h=5);
+translate([6,3,-1])cylinder(d=3.2,h=5);    
+translate([-6,3,-1])cylinder(d=3.2,h=5);
 translate([0,-35,0])cylinder(d=3.2,h=12);
 }
 }
@@ -41,8 +43,8 @@ translate([0,-35,0])cylinder(d=3.2,h=12);
 module back_plate(){
 difference(){
 translate([0,0,1.5])cube([65,80,3],center=true);
-translate([6,15,-1])cylinder(d=3.2,h=5);    
-translate([-6,15,-1])cylinder(d=3.2,h=5);
+translate([6,3,-1])cylinder(d=3.2,h=5);    
+translate([-6,3,-1])cylinder(d=3.2,h=5);
 translate([0,-35,0])cylinder(d=3.2,h=12);
 }
 translate([-10,31,0])
@@ -62,11 +64,10 @@ module motor_support(){
 $fn=30;
 
 difference(){
-translate([-11.5,8,0])cube([23,14,22.35]);
-//translate([-12.5,15,-10])cube([25,12,50]);
-translate([0,19.1,2.465])rotate([0,90,0])
+translate([-11.5,8,0])cube([23,12,22.35]);
+translate([0,17.1,2.465])rotate([0,90,0])
 cylinder(d=2.8,h=50,center=true,$fn=30);
-translate([0,19.1,19.885])rotate([0,90,0])
+translate([0,17.1,19.885])rotate([0,90,0])
 cylinder(d=2.8,h=50,center=true,$fn=30);
 translate([6,12,-1])cylinder(d=2.8,h=30);    
 translate([-6,12,-1])cylinder(d=2.8,h=30);    
@@ -115,3 +116,46 @@ rotate([i,0,0])translate([-1,5,5])cube(40);
 }
 }
 
+module us_support(){
+difference()
+{
+minkowski($fn=30){
+cube([45.5,20,6],center=true);
+cylinder(d=4,h=0.000001);
+}
+translate([0,0,2])cube([45.6,25,5],center=true);
+translate([13,0,-5])cylinder(d=17,h=5,$fn=60);
+translate([-13,0,-5])cylinder(d=17,h=5,$fn=60);
+hull(){
+translate([-3.5,7.5,-5])cylinder(d=4,h=5,$fn=60);
+translate([3.5,7.5,-5])cylinder(d=4,h=5,$fn=60);
+}
+hull(){
+translate([-3.5,-8,-5])cylinder(d=4,h=5,$fn=60);
+translate([3.5,-8,-5])cylinder(d=4,h=5,$fn=60);
+}
+translate([0,-10.5,0])cube([11,5,8],center=true);
+}
+hull(){
+translate([23,9,1.9])sphere(0.8,$fn=20);
+translate([23,-9,1.9])sphere(0.8,$fn=20);
+}
+hull(){
+translate([-23,9,1.9])sphere(0.8,$fn=20);
+translate([-23,-9,1.9])sphere(0.8,$fn=20);
+}
+translate([9.5,14,-3])rotate([0,0,180])
+scale([1,1,1.25])difference(){
+cube(2);
+cylinder(d=4,h=2,$fn=30);
+}
+translate([-9.5,14,-3])rotate([0,0,-90])
+scale([1,1,1.25])difference(){
+cube(2);
+cylinder(d=4,h=2,$fn=30);
+}
+difference(){
+translate([-7.5,12,-3])cube([15,15,2.5]);
+translate([0,20,-4])cylinder(d=2.8,h=5,$fn=12);
+}
+}
