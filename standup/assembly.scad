@@ -57,6 +57,10 @@ difference(){
 cube([65,20,32],center=true);
 cube([59,33,33],center=true);
 }
+translate([29.5,25,35])rotate([90,0,0])
+cylinder(d=6,h=20,$fn=4);
+scale([-1,1,1])translate([29.5,25,35])rotate([90,0,0])
+cylinder(d=6,h=20,$fn=4);
 }
 
 
