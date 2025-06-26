@@ -1,12 +1,12 @@
 $fn=60;
 
 //assembly
-%rotate([-90,0,0])arduino_plate();
+rotate([-90,0,0])arduino_plate();
 
 translate([0,0,9])rotate([-90,0,180])
 motor_support();
 
-%translate([0,-22.3,0])rotate([-90,0,180])back_plate();
+translate([0,-22.3,0])rotate([-90,0,180])back_plate();
 
 %translate([11.5,0,-38.1])rotate([90,0,0])
 motorandwheel();
