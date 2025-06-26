@@ -15,6 +15,7 @@ motorandwheel();
 
 translate([0,-3,59])rotate([-90,0,180])us_support();
 
+translate([0,-59.9,-40])rotate([180,0,180])ballcaster();
 
 module arduino_plate(){
 difference(){
@@ -48,19 +49,19 @@ translate([6,3,-1])cylinder(d=3.2,h=5);
 translate([-6,3,-1])cylinder(d=3.2,h=5);
 translate([0,-35,0])cylinder(d=3.2,h=12);
 }
-translate([-10,31,0])
+translate([-10,35,0])
 difference(){
 cube([20,5,15]);
 translate([10,7,10])rotate([90,0,0])cylinder(d=2.8,h=10);
 }
-translate([0,15,19])
+translate([0,19,19])
 difference(){
 cube([65,20,32],center=true);
 cube([59,33,33],center=true);
 }
-translate([29.5,25,35])rotate([90,0,0])
+translate([29.5,29,35])rotate([90,0,0])
 cylinder(d=6,h=20,$fn=4);
-scale([-1,1,1])translate([29.5,25,35])rotate([90,0,0])
+scale([-1,1,1])translate([29.5,29,35])rotate([90,0,0])
 cylinder(d=6,h=20,$fn=4);
 }
 
@@ -162,5 +163,21 @@ cylinder(d=4,h=2,$fn=30);
 difference(){
 translate([-7.5,12,-3])cube([15,19,2.5]);
 translate([0,24,-6])cylinder(d=2.8,h=16,$fn=12);
+}
+}
+
+module ballcaster(){
+difference(){
+union(){
+cylinder(d=14,h=17);
+translate([0,0,17])cylinder(r1=7, r2=6, h=1);
+}
+translate([0,0,14])cylinder(d=9.8,h=25);
+translate([0,0,14.9])sphere(d=10.8);
+translate([0,0,19])cube(size=[3,15,16],center=true);
+}
+difference(){
+translate([-7,0,0])cube([14,35,3]);
+translate([0,27.58,-1])cylinder(d=3.2,h=5);
 }
 }
